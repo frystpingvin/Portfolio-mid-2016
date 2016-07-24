@@ -1,0 +1,31 @@
+---
+title: Samuel Lie
+---
+<header>
+  <h1>Designer and developer driven to create great and fun things</h1>
+</header>
+
+<div class="about">
+  <p>
+    Since 2013 I have been working with front-end development, and I quickly gained an interest in creating things that look good and are easy to use.
+  </p>
+  <p>
+    Since then I have been part of <a href="http://noviumdesign.se" target="_blank">creating strong brand identites for the digital age</a> and designing, prototyping and building web apps as well as consulting a web developer education programme.
+  </p>
+</div>
+
+<div class="contact-info">
+  <ul>
+    <li>+46 709 82 92 51</li>
+    <li><a href="mailto:hej@samuellie.se">hej@samuellie.se</a></li>
+  </ul>
+</div>
+
+<div class="projects">
+  <strong>Some projects I’ve been working on:</strong>
+  <ul>
+    <% data.work.projects.each do |project| %>
+      <li><a href="<%= project.url %>" class="project" onmouseover="changeBg('<%= project.image %>', <%= project.negative %>);" onmouseout="resetBg();"><%= project.client %></a></li>
+    <% end %>
+  </ul>
+</div>

@@ -1,0 +1,42 @@
+#code-bg
+  z-index: $z-index-bg
+  position: absolute
+  bottom: 0
+  right: 0
+
+#code-overlay
+  position: absolute
+  bottom: 0
+  right: 0
+  height: 100%
+  width: 100%
+  z-index: 9
+  +background-image(linear-gradient(top left, #2C1F3F, rgba(28, 30, 62, 0.8) 55%, rgba(28, 30, 62, 0.2) 80%, transparent))
+
+#code-lines,
+#code-js
+  position: relative
+  float: left
+  display: block
+  white-space: pre
+  padding: 1em 1.5em
+  opacity: 0.75
+
+#code-lines
+  background-color: #21252B
+
+  &:before
+    color: #4B5264
+    content: "01\a 02\a 03\a 04\a 05\a 06\a 07\a 08\a 09\a 10\a 11\a 12\a 12\a 13\a 14\a 15\a 16\a 17\a 18\a 19\a 20\a 21\a 22\a 23\a 24\a 25\a 26\a 27\a 28\a 29\a 30\a 31\a 32\a 33\a 34\a 35\a 36\a 37\a 38\a 39"
+
+#code-js
+  background-color: #282C34
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+  &:hover
+    cursor: default

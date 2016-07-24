@@ -1,0 +1,38 @@
+header
+  +span(full)
+
+  h1
+    margin-bottom: $base-spacing
+
+    +breakpoint($tablet)
+      text-align: right
+      float: right
+      max-width: 18em
+
+.about,
+.contact-info
+  +span(full)
+
+  +breakpoint($tablet)
+    +span(6)
+
+  +breakpoint($desktop)
+    +span(3.5)
+
+.contact-info
+  margin-bottom: $small-spacing
+
+.projects
+  clear: left
+  +span(full)
+
+  +breakpoint($desktop)
+    +span(7)
+
+  li a
+    display: block
+    box-shadow: none
+
+    &:hover
+      box-shadow: none
+      font-weight: 500

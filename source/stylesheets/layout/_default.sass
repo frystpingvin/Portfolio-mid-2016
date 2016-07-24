@@ -1,0 +1,16 @@
+html,
+body
+  position: relative
+  height: 100%
+  width: 100%
+
+body
+  +background-image(linear-gradient(#2C1F3F, #1C1E3E))
+  background-size: cover
+  background-position: center
+  +transition-property(background-image, color)
+  +transition-duration($base-duration)
+  +transition-timing-function($base-timing)
+
+.main-content
+  z-index: $z-index-content

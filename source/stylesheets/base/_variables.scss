@@ -1,0 +1,54 @@
+// Breakpoints
+$large-phone: 400px;
+$tablet: 600px;
+$desktop: 900px;
+
+// Typography
+$base-font-family: 'museo-slab', monospace;
+$heading-font-family: 'futura', $helvetica;
+$base-font-weight: 300;
+$heading-font-weight: 400;
+
+// Font Sizes
+$base-font-size: 1.125em;
+$h1-font-size: 1.688em;
+
+// Line height
+$base-line-height: 1.4;
+$heading-line-height: 1.1375;
+
+// Other Sizes
+$base-border-radius: 3px;
+$gutter-spacing: gutter();
+$base-spacing: 2em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+$z-index-bg: -1;
+$z-index-content: 1;
+
+// Colors
+$blue: #1565c0;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #EDEAEA;
+$yellow: #f7a800;
+
+// Font Colors
+$base-font-color: white;
+$action-color: $base-font-color;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $yellow;
+
+// Background Colors
+$base-background-color: #fff;
+$secondary-background-color: tint($base-border-color, 75%);
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Animations
+$base-duration: 150ms;
+$base-timing: ease;

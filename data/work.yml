@@ -1,0 +1,25 @@
+projects:
+  - client: Marknadsinformation
+    url: http://marknadsinformation.se
+    image: images/marknadsinformation.svg
+    negative: false
+
+  - client: Indie Lee Scandinavia
+    url: http://indielee.se
+    image: images/indie-lee.svg
+    negative: true
+
+  - client: JC (ACE)
+    url: http://jc-ace.se
+    image: images/jc.jpg
+    negative: false
+
+  - client: Fusion Associates
+    url: http://fusionassociates.eu
+    image: images/fusion-associates.svg
+    negative: false
+
+  - client: Hubbster Group
+    url: http://hubbstergroup.com
+    image: images/hubbster.svg
+    negative: false
