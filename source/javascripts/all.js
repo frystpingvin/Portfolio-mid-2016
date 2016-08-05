@@ -6,7 +6,19 @@ var body          = document.body,
                       body,
                       document.getElementsByTagName('a')
                     ],
-    initialColor  = body.style.getPropertyValue('color');
+    initialColor  = body.style.getPropertyValue('color'),
+    preLoader     = document.getElementById('preloader');
+    projectEls    = document.getElementsByClassName('project');
+
+// Preload images
+(function() {
+  for (var i = 0; i < projectEls.length; i++) {
+    var src = projectEls[i].getAttribute('data-src');
+    preloader.innerHTML += ('<img src="' + src + '">');
+
+    console.log("Loading " + src);
+  }
+}());
 
 // Syntax highlight
 var codeContainer = document.getElementById('code-bg');
@@ -15,22 +27,26 @@ codeElement.innerHTML = Prism.highlight("\n//= require_tree .\n\nvar body       
 
 // Change background and color after project
 var changeBg = function(image, negative) {
-  body.style.backgroundImage = 'url(' + image + ')';
-  codeContainer.style.visibility = 'hidden';
-  codeContainer.style.opacity = '0';
+  if (window.innerWidth >= 900) {
+    body.style.backgroundImage = 'url(' + image + ')';
+    codeContainer.style.visibility = 'hidden';
+    codeContainer.style.opacity = '0';
 
-  if (negative == true) {
-    changeColor('black');
+    if (negative == true) {
+      changeColor('black');
+    }
   }
 };
 
 var resetBg = function() {
-  body.style.backgroundImage = initialBg;
-  codeContainer.style.visibility = 'visible';
-  codeContainer.style.opacity = '1';
+  if (window.innerWidth >= 900) {
+    body.style.backgroundImage = initialBg;
+    codeContainer.style.visibility = 'visible';
+    codeContainer.style.opacity = '1';
 
-  if (body.style.color != initialColor) {
-    changeColor(initialColor);
+    if (body.style.color != initialColor) {
+      changeColor(initialColor);
+    }
   }
 };
 

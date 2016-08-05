@@ -3,6 +3,7 @@ $susy: (
 );
 
 .container {
+  @include clearfix;
   padding: $small-spacing;
 
   @include breakpoint($tablet) {

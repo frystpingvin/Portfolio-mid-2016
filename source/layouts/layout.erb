@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
     <meta name="description" content="Front-end developer and designer creating user interfaces and digital brand identities.">
+    <meta name="google-site-verification" content="bAaBl8KxiAcccw9eBX5Q8ioYPJFtw6gv4kllGczspiY">
 
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "Samuel Lie" %></title>
@@ -17,6 +18,8 @@
   </head>
 
   <body class="<%= page_classes %>">
+    <div id="preloader"></div>
+
     <div class="main-content container">
       <%= yield %>
     </div>

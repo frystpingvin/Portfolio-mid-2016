@@ -1,8 +1,13 @@
 #code-bg
-  z-index: $z-index-bg
-  position: absolute
-  bottom: 0
-  right: 0
+  display: none
+
+  +breakpoint($tablet)
+    display: block
+    z-index: $z-index-bg
+    position: absolute
+    left: auto
+    right: 0
+    bottom: 0
 
 #code-overlay
   position: absolute
