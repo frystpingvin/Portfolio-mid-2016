@@ -25,10 +25,10 @@ h6 {
 }
 
 h1 {
-  font-size: $h1-font-size*0.7;
+  font-size: $h1-font-size*0.8;
   margin-bottom: 0.3em;
 
-  @include breakpoint($desktop) {
+  @include breakpoint($tablet) {
     font-size: $h1-font-size;
   }
 }
