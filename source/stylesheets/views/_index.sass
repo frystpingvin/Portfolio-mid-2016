@@ -1,14 +1,22 @@
 header
   +span(full)
 
-  h1
+  .name,
+  .tagline
     margin-bottom: $small-spacing
 
-    +breakpoint($tablet)
-      text-align: right
+  .name
+    float: left
+
+  .tagline
+    float: left
+    clear: left
+
+    +breakpoint($desktop)
       float: right
+      clear: none
+      text-align: right
       max-width: 18em
-      margin-bottom: $base-spacing
 
 .about,
 .contact-info
