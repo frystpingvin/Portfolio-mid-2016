@@ -8,17 +8,17 @@ title: Samuel Lie
 
 <div class="about">
   <p>
-    Been working as a front-end developer and interaction designer for 3 years, and have gained a lot of experience working on design projects creating easy to use, good-looking products and services.
+    Been working as a front-end developer and web designer for 3 years creating easy to use, good-looking and rememberable products and services.
   </p>
   <p>
-    Since I started I have been part of <a href="http://noviumdesign.se" target="_blank">creating strong brand identites for the digital age</a> and designing and prototyping web and mobile apps as well as consulting a web developer education programme.
+    Since I started I have been part of <a href="http://noviumdesign.se" target="_blank">creating strong brand identites for the digital age</a> and designing and prototyping web and mobile apps for startups as well as consulting a web developer education programme.
   </p>
 </div>
 
 <div class="contact-info">
   <ul>
     <li>+46 709 82 92 51</li>
-    <li><a href="mailto:hej@samuellie.se">hej@samuellie.se</a></li>
+    <li><%= mail_to "hej@samuellie.se", "hej@samuellie.se" %></li>
   </ul>
 </div>
 
@@ -26,7 +26,7 @@ title: Samuel Lie
   <strong>Some companies I’ve been working with:</strong>
   <ul>
     <% data.work.projects.each do |project| %>
-      <li><a href="<%= project.url %>" data-src="<%= project.image %>" class="project" target="_blank" onmouseover="changeBg('<%= project.image %>', <%= project.negative %>);" onmouseout="resetBg();"><%= project.client %></a></li>
+      <li><a href="<%= project.url %>" data-src="<%= project.image %>" class="project" target="_blank" onmouseenter="changeBg('<%= project.image %>', <%= project.negative %>);" onmouseout="resetBg();"><%= project.client %></a></li>
     <% end %>
   </ul>
 </div>
