@@ -15,8 +15,6 @@ var body          = document.body,
   for (var i = 0; i < projectEls.length; i++) {
     var src = projectEls[i].getAttribute('data-src');
     preloader.innerHTML += ('<img src="' + src + '">');
-
-    console.log("Loading " + src);
   }
 }());
 
