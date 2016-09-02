@@ -18,6 +18,17 @@ var body          = document.body,
   }
 }());
 
+// add 100% height so background covers all
+(function() {
+  var bodyHeight    = body.clientHeight;
+  var windowHeight  = window.innerHeight;
+
+  if (bodyHeight <= windowHeight) {
+    document.querySelector('html').className = 'full-height';
+    body.style.height = '100%';
+  }
+}());
+
 // Syntax highlight
 var codeContainer = document.getElementById('code-bg');
 var codeElement = document.getElementById('code-js');
