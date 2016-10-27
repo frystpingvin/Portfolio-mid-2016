@@ -1,7 +1,7 @@
 projects:
-  - client: Marknadsinformation
-    url: http://marknadsinformation.se
-    image: images/marknadsinformation.svg
+  - client: Defiso Media
+    url: http://defiso.se
+    image: images/defiso.svg
     negative: false
 
   - client: Indie Lee Scandinavia
@@ -12,6 +12,11 @@ projects:
   - client: JC (ACE)
     url: http://jc-ace.se
     image: images/jc.jpg
+    negative: false
+
+  - client: Marknadsinformation
+    url: http://marknadsinformation.se
+    image: images/marknadsinformation.svg
     negative: false
 
   - client: Fusion Associates
