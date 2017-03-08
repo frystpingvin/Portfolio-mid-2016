@@ -9,6 +9,11 @@ projects:
     image: images/indie-lee.svg
     negative: true
 
+  - client: Fusion Associates
+    url: http://fusionassociates.eu
+    image: images/fusion-associates.svg
+    negative: false
+
   - client: JC (ACE)
     url: http://jc-ace.se
     image: images/jc.jpg
@@ -17,11 +22,6 @@ projects:
   - client: Marknadsinformation
     url: http://marknadsinformation.se
     image: images/marknadsinformation.svg
-    negative: false
-
-  - client: Fusion Associates
-    url: http://fusionassociates.eu
-    image: images/fusion-associates.svg
     negative: false
 
   - client: Hubbster Group
