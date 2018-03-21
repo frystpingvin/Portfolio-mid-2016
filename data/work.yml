@@ -1,6 +1,6 @@
 projects:
   - client: Defiso Media
-    url: http://defiso.se
+    url: https://defiso.se
     image: images/defiso.svg
     negative: false
 
@@ -10,7 +10,7 @@ projects:
     negative: true
 
   - client: Fusion Associates
-    url: http://fusionassociates.eu
+    url: https://fusionassociates.eu
     image: images/fusion-associates.svg
     negative: false
 
@@ -25,6 +25,9 @@ projects:
     negative: false
 
   - client: Hubbster Group
-    url: http://hubbstergroup.com
+    url: https://hubbstergroup.com
     image: images/hubbster.svg
     negative: false
+
+  - client: Brain Space
+    url: http://brain-space.se

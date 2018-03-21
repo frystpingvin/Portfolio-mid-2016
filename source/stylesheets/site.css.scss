@@ -2,16 +2,11 @@
 @import "normalize";
 
 // Vendor stuff
-@import "susy";
 @import "bourbon/bourbon";
-@import "breakpoint";
 @import "base/base";
-
-@import "vendor/prism";
 
 @import "layout/default";
 
 @import "components/preloader";
-@import "components/code-bg";
 
 @import "views/index";

@@ -34,20 +34,9 @@
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
     <% end %>
-    <div id="preloader"></div>
-
     <div class="main-content container">
       <%= yield %>
     </div>
-
-    <div id="code-bg">
-      <div id="code-overlay"></div>
-      <div id="code-lines"></div>
-      <div id="code-js"></div>
-    </div>
-
-    <script type="text/javascript" src="javascripts/vendor/prism.js"></script>
-    <%= javascript_include_tag :all %>
     <% if build? %>
       <!-- Google Tag Manager -->
       <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PSKFLZ"

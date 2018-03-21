@@ -1,12 +1,4 @@
-$susy: (
-  columns: 12, gutters: 1/4
-);
-
 .container {
   @include clearfix;
-  padding: $small-spacing;
-
-  @include breakpoint($tablet) {
-    padding: $base-spacing;
-  };
+  padding: $base-spacing;
 };

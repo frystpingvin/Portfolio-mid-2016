@@ -1,47 +1,6 @@
-header
-  +span(full)
-
-  .name,
-  .tagline
-    margin-bottom: $small-spacing
-
-  .name
-    float: left
-
-  .tagline
-    float: left
-    clear: left
-
-    +breakpoint($desktop)
-      float: right
-      clear: none
-      text-align: right
-      max-width: 18em
-
 .about,
-.contact-info
-  +span(full)
-
-  +breakpoint($tablet)
-    +span(6)
-
-  +breakpoint($desktop)
-    +span(3.5)
-
-.contact-info
-  margin-bottom: $small-spacing
-
+.contact-info,
 .projects
-  clear: left
-  +span(full)
-
-  +breakpoint($desktop)
-    +span(7)
-
-  li a
-    display: inline-block
-    box-shadow: none
-
-    &:hover
-      box-shadow: none
-      font-weight: 500
+  margin: 0 auto
+  max-width: 480px
+  margin-bottom: $small-spacing*1.3

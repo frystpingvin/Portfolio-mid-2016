@@ -1,32 +1,28 @@
 ---
-title: Samuel Lie
+title: Samuel Lie, designer and developer
 ---
-<header>
-  <h1 class="name">Samuel Lie</h1>
-  <h1 class="tagline">Developer and designer driven to create good things for the web</h1>
-</header>
-
-<div class="about">
+<section class="about">
+  <h1>Samuel Lie, designer and developer</h1>
   <p>
-    Been working as a front-end developer and web designer for 3 years creating easy to use, good-looking and rememberable products and services.
+    UX designer and front-end developer creating easy to use, good-looking and rememberable products and services. Currently UX designer at <%= link_to 'Föreningshuset', 'https://www.foreningshuset.se' %>.
   </p>
-  <p>
-    Since I started I have been part of <a href="http://noviumdesign.se" target="_blank">creating strong brand identites for the digital age</a> and designing and prototyping web and mobile apps for startups as well as consulting a web developer education programme.
-  </p>
-</div>
+</section>
 
-<div class="contact-info">
+<section class="contact-info">
+  <h1>Contact info</h1>
   <ul>
-    <li>+46 709 82 92 51</li>
     <li><%= mail_to "hej@samuellie.se", "hej@samuellie.se" %></li>
+    <li><%= link_to 'instagram: @samuellie', 'https://www.instagram.com/samuellie/' %></li>
   </ul>
-</div>
+</section>
 
-<div class="projects">
-  <strong>Some companies I’ve been working with:</strong>
+<section class="projects">
+  <h1>Earlier work and clients</h1>
   <ul>
     <% data.work.projects.each do |project| %>
-      <li><a href="<%= project.url %>" data-src="<%= project.image %>" class="project" target="_blank" onmouseenter="changeBg('<%= project.image %>', <%= project.negative %>);" onmouseout="resetBg();"><%= project.client %></a></li>
+      <li>
+        <%= link_to project.client, project.url, :class => 'project', 'data-src' => project.image %>
+      </li>
     <% end %>
   </ul>
-</div>
+</section>
